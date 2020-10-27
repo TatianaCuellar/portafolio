@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
 //Color
-$primary-color: #00A992;
+$primary-color: #325772;
 $white-color: #fff;
 $gray-color: #434343;
 
@@ -15,6 +15,7 @@ $shadow: 0 2px 3px #9b877336;
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Alegreya', serif;
 }
 
 .home {
@@ -22,12 +23,19 @@ $shadow: 0 2px 3px #9b877336;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
-    background: $primary-color;
+    background-image: url(/assets/img/background-2.jpg);
+
+    hr {
+      background: white;
+    }
     h1 {
       color: $white-color;
       font-size: $font-x-large;
+      font-weight: bold;
+      text-shadow: 7px -2px black;
+      letter-spacing: 5px;
     }
     p {
       margin-bottom: 0;
