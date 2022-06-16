@@ -21,30 +21,55 @@ $shadow: -2px 2px 7px -1px rgb(122 85 209);
   font-family: 'Alegreya', serif;
 }
 
-body {
-  background-image: radial-gradient(circle at 95.7% 50%, #533661 0, #442b5d 25%, #321f59 50%, #191555 75%, #000e52 100%);
+ul {
+  list-style: none;
 }
+body {
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 95.7% 50%, #533661 0, #442b5d 25%, #321f59 50%, #191555 75%, #000e52 100%);
 
+  canvas {
+    position: absolute;
+    top: 0;
+  }
+}
+button, .button {
+  border: 1px solid $yellow-color;
+  padding: 2px 8px;
+  color: $yellow-color;
+  background: transparent;
+
+  &:hover {
+    background: $yellow-color;
+    color: white;
+  }
+}
 section {
   height: 100vh;
 
   h3 {
     border-bottom: 1px solid;
     width: fit-content;
-    margin: 2rem 0 4rem;
+    margin: 4rem 0 ;
     text-align: left;
     color: $yellow-color;
     font-size: $font-large;
   }
 }
 .home {
+  .content-row {
+    z-index: 9;
+    position: relative;
+  }
   .container-select {
     margin: 1rem auto;
 
     select {
       background: #3e275b;
-      border: none;
-      color: #bbddfe;
+      border: 1px solid $yellow-color;
+      padding: 2px 8px;
+      color: $yellow-color;
+      z-index: 999;
     }
   }
   .welcome {
@@ -58,11 +83,18 @@ section {
       color: white;
       h1 {
         color: $yellow-color;
-
       }
       p{
-        font-size: 2rem;
+        font-size: $font-large;
         margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        overflow: hidden;
+
+        &.letter {
+          display: inline-block;
+          line-height: 1em;
+        }
       }
     }
 
@@ -73,7 +105,6 @@ section {
     }
 
     ul {
-      list-style: none;
       display: flex;
       gap: 10px;
       li {
@@ -218,7 +249,40 @@ section {
     }
   }
 }
+.contact {
+  margin: auto;
 
+  img {
+    width: 50%;
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: end;
+    border-right: 1px solid $yellow-color;
+    padding-right: 30px;
+  }
+  form {
+    input, textarea {
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+
+      &:active, &:focus {
+        background: transparent;
+      }
+    }
+
+    button {
+      margin: 2rem 0;
+    }
+  }
+}
 
 /* width */
 ::-webkit-scrollbar {

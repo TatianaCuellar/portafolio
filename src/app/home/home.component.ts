@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-
+import {Component, ElementRef, OnInit} from '@angular/core';
+import AOS from 'aos';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  formContact: FormGroup;
   images;
   optionsWork = {
     items: 4, dots: false, nav: true, loop: false,
@@ -210,9 +212,24 @@ export class HomeComponent implements OnInit {
 //   ]
 // }
 
-  constructor() {
+  constructor(
+    public formBuilder: FormBuilder) {
   }
 
   ngOnInit() {
+    AOS.init({
+      offset: 200, // offset (in px) from the original trigger point
+      duration: 1500, // values from 0 to 3000, with step 50ms
+    });
+    this.validateForm();
+  }
+
+  validateForm() {
+    this.formContact = this.formBuilder.group({
+      name: [null, Validators.required],
+      email: [null, Validators.required],
+      subject: [null, Validators.required],
+      description: [null, Validators.required]
+    });
   }
 }
