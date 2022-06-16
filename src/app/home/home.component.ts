@@ -41,7 +41,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/sass.svg',
         '/assets/img/typescript.svg',
         '/assets/img/bootstrap.svg'
-      ]
+      ],
+      location: '/assets/img/global.png'
     },
     {
       title: 'Nirpharma',
@@ -53,7 +54,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/javascript.svg',
         '/assets/img/sass.svg',
         '/assets/img/bootstrap.svg'
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'Volkswagen',
@@ -67,7 +69,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/bootstrap.svg',
         '/assets/img/totalcode.png',
         '/assets/img/jquery.svg',
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'La Agencia Mola',
@@ -80,7 +83,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/sass.svg',
         '/assets/img/typescript.svg',
         '/assets/img/bootstrap.svg'
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'Metropolis Center',
@@ -94,7 +98,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/bootstrap.svg',
         '/assets/img/totalcode.png',
         '/assets/img/jquery.svg',
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'Martinez Diez',
@@ -108,7 +113,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/typescript.svg',
         '/assets/img/bootstrap.svg',
         '/assets/img/wordpress.svg'
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'La 14',
@@ -122,7 +128,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/bootstrap.svg',
         '/assets/img/totalcode.png',
         '/assets/img/jquery.svg',
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'ByBeauty',
@@ -136,7 +143,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/bootstrap.svg',
         '/assets/img/totalcode.png',
         '/assets/img/jquery.svg',
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'El laurel del Espino',
@@ -148,7 +156,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/javascript.svg',
         '/assets/img/css-3.svg',
         '/assets/img/php.svg',
-      ]
+      ],
+      location: '/assets/img/col.png'
     },
     {
       title: 'El Roble de Arraijan',
@@ -160,7 +169,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/javascript.svg',
         '/assets/img/css-3.svg',
         '/assets/img/php.svg',
-      ]
+      ],
+      location: '/assets/img/panama.png'
     },
     {
       title: 'Los palmitos de Arraijan',
@@ -172,7 +182,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/javascript.svg',
         '/assets/img/css-3.svg',
         '/assets/img/php.svg',
-      ]
+      ],
+      location: '/assets/img/panama.png'
     },
     {
       title: 'Los Naranjos del Espino',
@@ -184,7 +195,8 @@ export class HomeComponent implements OnInit {
         '/assets/img/javascript.svg',
         '/assets/img/css-3.svg',
         '/assets/img/php.svg',
-      ]
+      ],
+      location: '/assets/img/panama.png'
     }
   ];
 

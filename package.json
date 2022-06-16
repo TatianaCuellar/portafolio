@@ -2,7 +2,7 @@
   "name": "portafolio-tatiana",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "ng s -o --port=8080",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",

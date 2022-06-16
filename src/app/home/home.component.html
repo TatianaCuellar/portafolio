@@ -1,51 +1,140 @@
 <section class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-end container-select">
+        <select class="form-select">
+          <option value="1" selected>ES</option>
+          <option value="2">EN</option>
+        </select>
+      </div>
+    </div>
+  </div>
   <div class="welcome">
     <div class="container">
-      <hr>
-      <h1>Tatiana Cuellar</h1>
-      <p>Frontend Developer</p>
-      <ul>
-        <li>
-          <a href="">
-            <img src="/assets/img/icon-github.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="/assets/img/icon-linkedin.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="/assets/img/icon-mail.svg" alt="">
-          </a>
-        </li>
-      </ul>
-      <hr>
+      <div class="row">
+        <div class="col-6 d-flex align-items-center">
+          <div class="name">
+            <p>Tatiana Cuellar</p>
+            <h1>Frontend Developer</h1>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="/assets/img/icon-github.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="/assets/img/icon-linkedin.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="/assets/img/icon-mail.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="/assets/img/image-banner.webp" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<section class="about">
 <div class="container">
-  <section id="my-work">
-    <h4>Mi trabajo</h4>
+  <h3>Acerca de mi</h3>
+  <div class="row">
+    <div class="col-6 container-about d-flex">
+      <span class="d-flex justify-content-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also </span>
+    </div>
+    <div class="col-6 content-skills">
+      <h5>Skills</h5>
+      <div class="container-skill">
+        <div class="row">
+          <div class="col-12 item-skill">
+            <div class="row">
+              <span class="label col-9">HTML5</span>
+              <span class="percentage col-3"> 90%</span>
+              <div class="progress col-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 item-skill">
+            <div class="row">
+              <span class="label col-9">CSS</span>
+              <span class="percentage col-3"> 85%</span>
+              <div class="progress col-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 item-skill">
+            <div class="row">
+              <span class="label col-9">JS</span>
+              <span class="percentage col-3"> 75%</span>
+              <div class="progress col-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 item-skill">
+            <div class="row">
+              <span class="label col-9">TS</span>
+              <span class="percentage col-3"> 75%</span>
+              <div class="progress col-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 item-skill">
+            <div class="row">
+              <span class="label col-9">ANGULAR</span>
+              <span class="percentage col-3"> 85%</span>
+              <div class="progress col-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="my-projects">
+  <div class="container">
+    <h3>Mis proyectos</h3>
     <owl-carousel [options]="optionsWork" [items]="images" [carouselClasses]="['owl-theme', 'sliding']">
       <div class="item" *ngFor="let item of myWork">
         <div class="card">
           <div class="content-img">
-            <img [src]="item.image"  alt="">
+            <img [src]="item.image" alt="">
           </div>
           <div class="content-description">
-            <span class="title">{{item.title}}</span>
+            <div class="title d-flex justify-content-between">
+              <span>{{item.title}}</span>
+              <img  [src]="item.location" alt="">
+            </div>
             <p>
               {{item.description}}
             </p>
             <a href="{{item.linkSite}}" target="_blank">Ver el sitio web</a>
           </div>
           <div class="tecnology">
-              <img [src]="img" *ngFor="let img of item.tenology">
+            <img [src]="img" *ngFor="let img of item.tenology">
           </div>
         </div>
       </div>
     </owl-carousel>
-  </section>
-</div>
+
+  </div>
+</section>
+<section class="contact">
+  <div class="container">
+    <h3>Información de contacto</h3>
+  </div>
+</section>
