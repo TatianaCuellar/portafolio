@@ -46,6 +46,9 @@ button, .button {
 }
 section {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h3 {
     border-bottom: 1px solid;
@@ -259,7 +262,7 @@ section {
   ul {
     height: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 3rem;
     text-align: end;

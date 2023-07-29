@@ -6,7 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import {OwlModule} from 'ngx-owl-carousel';
 import { HomeComponent } from './home/home.component';
 import {ReactiveFormsModule} from '@angular/forms';
-
+import {environment} from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +16,8 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     OwlModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

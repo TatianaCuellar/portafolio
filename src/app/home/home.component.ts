@@ -31,11 +31,41 @@ export class HomeComponent implements OnInit {
     }
   };
 
+  totalcode: 'desarrollada en el cms TotalCode, donde debía adaptar el diseño e integrar validaciones y mejorar la experiencia de usuario.';
   myWork = [
+    {
+      title: 'Siscor PLUS',
+      image: '/assets/img/SISCOR.png',
+      description: 'Siscor es un software corporativo, fue desarrollada en Angular integrando autenticación de Microsoft, manejando Angular material para el diseño, integrando inteligencvia artificial con técnnologia OCR ',
+      linkSite: '#',
+      tenology: [
+        '/assets/img/angular.svg',
+        '/assets/img/html5.svg',
+        '/assets/img/sass.svg',
+        '/assets/img/typescript.svg',
+        '/assets/img/angular-material.png'
+      ],
+      location: '/assets/img/global.png'
+    },
+    {
+      title: 'Aristas',
+      image: '/assets/img/aristas.png',
+      description: 'Aristas es una aplicación mobile desarrollada en angular - ionic, integrando notificaciones push',
+      linkSite: '#',
+      tenology: [
+        '/assets/img/angular.svg',
+        '/assets/img/html5.svg',
+        '/assets/img/sass.svg',
+        '/assets/img/typescript.svg',
+        '/assets/img/ionic.webp',
+        '/assets/img/firebase.png'
+      ],
+      location:  '/assets/img/col.png'
+    },
     {
       title: 'Veabor',
       image: '/assets/img/veabor.jpg',
-      description: 'Es uan webapp de viajes ',
+      description: 'Veabor es una aplicación de viajes. Mi aporte fue la implementación de todo el diseño e integración de endpoints agregando las validaciones necesarias.',
       linkSite: 'https://veabor.com/',
       tenology: [
         '/assets/img/angular.svg',
@@ -49,7 +79,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Nirpharma',
       image: '/assets/img/nirpharma.jpg',
-      description: 'Es una página web responsive, de cannabis medicinal',
+      description: 'Es una página web, de cannabis medicinal, Implementación del diseño y validaciones necesarias.',
       linkSite: '#',
       tenology: [
         '/assets/img/html5.svg',
@@ -62,7 +92,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Volkswagen',
       image: 'https://fakeimg.pl/350x200/',
-      description: 'Es una página web responsive, desarrollada en el cms totalcode',
+      description: 'Es una página web responsive, ' + this.totalcode,
       linkSite: '',
       tenology: [
         '/assets/img/html5.svg',
@@ -77,7 +107,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'La Agencia Mola',
       image: '/assets/img/mola.jpg',
-      description: 'Página web informativa de la agencia',
+      description: 'Es la página web de una agencia de publicidad, implementando un diseño responsive y animaciones',
       linkSite: 'https://www.laagenciamola.com/#/',
       tenology: [
         '/assets/img/angular.svg',
@@ -91,7 +121,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Metropolis Center',
       image: '/assets/img/metropolis.jpg',
-      description: 'Página web responsive, desarrollada en totalcode',
+      description: 'Página web responsive, ' + this.totalcode,
       linkSite: 'https://metropolis.tiendaweb.com.co/',
       tenology: [
         '/assets/img/html5.svg',
@@ -106,7 +136,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Martinez Diez',
       image: '/assets/img/martinez-diez.jpg',
-      description: 'Pagina responsive administrable, se deasarrollo con el front e intregración de la api de Wordpress en Angular y la parte administrables con Wordpress',
+      description: 'Pagina responsive administrable, Se desarrollo en angular el frontend realizanno intregración de la api de Wordpress en Angular y la parte administrable con Wordpress',
       linkSite: '',
       tenology: [
         '/assets/img/angular.svg',
@@ -121,7 +151,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'La 14',
       image: '/assets/img/la14.jpg',
-      description: 'Página web responsive, desarrollada en totalcode',
+      description: 'Página web responsive, ' + this.totalcode,
       linkSite: 'https://www.la14.com/',
       tenology: [
         '/assets/img/html5.svg',
@@ -136,7 +166,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'ByBeauty',
       image: 'https://fakeimg.pl/350x200/',
-      description: 'Página web responsive, desarrollada en totalcode',
+      description: 'Página web responsive, ' + this.totalcode,
       linkSite: 'https://www.bybeauty.com/',
       tenology: [
         '/assets/img/html5.svg',
